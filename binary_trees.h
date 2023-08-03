@@ -89,6 +89,10 @@ void push(binary_tree_t *node, levelorder_queue_t *head,
 void pop(levelorder_queue_t **head);
 int binary_tree_is_bst(const binary_tree_t *tree);
 int is_bst_helper(const binary_tree_t *tree, int low, int high);
+bst_t *bst_remove(bst_t *root, int value);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *inorder_successor(bst_t *root);
 
 /* BST tree tasks prototypes. */
 int binary_tree_is_bst(const binary_tree_t *tree);
