@@ -86,6 +86,8 @@ void free_queue(levelorder_queue_t *head);
 void push(binary_tree_t *node, levelorder_queue_t *head,
 		levelorder_queue_t **tail);
 void pop(levelorder_queue_t **head);
+int binary_tree_is_bst(const binary_tree_t *tree);
+int is_bst_helper(const binary_tree_t *tree, int low, int high);
 
 /* BST tree tasks prototypes. */
 int binary_tree_is_bst(const binary_tree_t *tree);
