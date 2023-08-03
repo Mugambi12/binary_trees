@@ -74,6 +74,12 @@ int is_perfect_recursive(const binary_tree_t *tree,
 const binary_tree_t *get_leaf(const binary_tree_t *tree);
 size_t depth(const binary_tree_t *tree);
 unsigned char is_leaf(const binary_tree_t *node);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+levelorder_queue_t *create_node(binary_tree_t *node);
+void pint_push(binary_tree_t *node, levelorder_queue_t *head,
+		levelorder_queue_t **tail, void (*func)(int));
+void free_queue(levelorder_queue_t *head);
+void pop(levelorder_queue_t **head);
 
 /* BST tree tasks prototypes. */
 int binary_tree_is_bst(const binary_tree_t *tree);
