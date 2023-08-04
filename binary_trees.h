@@ -117,6 +117,8 @@ int check_parent(const binary_tree_t *tree);
 int binary_tree_is_complete(const binary_tree_t *tree);
 int tree_is_complete(const binary_tree_t *tree, int i, int cnodes);
 size_t binary_tree_size(const binary_tree_t *tree);
+heap_t *heap_insert(heap_t **root, int value);
+size_t binary_tree_size(const binary_tree_t *tree);
 
 /* BST tree tasks prototypes. */
 int binary_tree_is_bst(const binary_tree_t *tree);
